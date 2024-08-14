@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CleanApp.Application",
+    "\\CleanApp.Domain",
+    "\\CleanApp.Infrastructure",
+    "\\CleanApp.Infrastructure\\DTOs",
+    "\\CleanApp.Infrastructure\\DTOs\\Auth",
+    "\\CleanApp.Infrastructure\\Interface",
+    "\\CleanApp.Infrastructure\\Migrations",
+    "\\CleanApp.Infrastructure\\Properties",
+    "\\CleanApp.Infrastructure\\Repositories"
+  ],
+  "SelectedNode": "\\CleanApp.Infrastructure\\Repositories\\AuthRepository.cs",
+  "PreviewInSolutionExplorer": false
+}
