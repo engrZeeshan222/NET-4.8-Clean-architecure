@@ -6,6 +6,48 @@ Use this document as **orientation for new developers**: what the system is tryi
 
 ---
 
+## Functional features (what is implemented)
+
+**Authentication**
+
+- Sign up with email (registration flow).
+- Log in with email and password.
+- Send one-time password (OTP) by **SMS** (Twilio).
+- Send OTP by **WhatsApp** (Twilio).
+- Verify OTP.
+
+**Users**
+
+- Create user.
+- List users with **paging**, **search**, and optional **include deleted**.
+- Get user by id.
+- Update user.
+- **Soft delete** user.
+- **Restore** soft-deleted user.
+
+**Roles and permissions (RBAC)**
+
+- Create role.
+- List roles with **paging**, **search**, and optional **include deleted**.
+- Get role by id.
+- Update role.
+- **Soft delete** role.
+- **Restore** soft-deleted role.
+- Domain model supports **permissions** and **role–permission** links (`Permission`, `RolePermission`).
+
+**Stripe / billing**
+
+- Create **Stripe Checkout** session from a list of **price IDs** for a given user.
+- Handle **Stripe webhooks** (incoming event payload processing).
+- Persist **customer billing profile**: link app **user** to **Stripe customer id** (`Customer` entity).
+
+**Data and cross-cutting**
+
+- **Entity Framework Core** persistence (MySQL as configured).
+- **Soft delete** and **active** flags plus **created/updated** timestamps on base entities.
+
+---
+
 ## 1. What this project is
 
 **CleanApp** is a backend-oriented codebase that models:
